@@ -1,0 +1,13 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    Layout = null;
+}
+@inherits  UmbracoBasics.Models.ContactModel
+<div class="form-group">
+    <div class="col-xs-3">
+        @Html.LabelFor(m => m.FirstName)
+    </div>
+    <div class="col-xs-9">
+        @Html.TextBoxFor(m => m.FirstName)
+    </div>
+</div>
